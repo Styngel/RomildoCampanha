@@ -1,0 +1,121 @@
+:root {
+    --cor1:#00b5f7;
+    --cor2:#0d5189;
+    --cor3:#30386f;
+    --corbranca:#fff;
+    --corpreta:#000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth ;
+}
+body {
+    font-family: 'Libre Baskerville';
+    font-size: 2rem;
+}
+h1{
+    font-family: 'montserrat';
+    font-size: 4.5rem;
+    }
+ 
+.center-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    }
+
+/*--------------------------------------------------------------------------------*/
+.menu {
+    background-color: var(--cor2);
+    position: fixed;
+    width: 100%;
+    min-height: 80px;
+    border-bottom: 0.1rem solid #3377bf
+    ;
+    z-index: 1;
+}
+.menu-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--corbranca);
+
+    && ul{
+        display: flex;
+    }
+
+    && ul li{
+        display: flex;
+        align-items: center;
+        height: 8rem;
+        font-size: 2.4rem;
+        list-style: none;
+        text-decoration: none ;
+        text-align: center;
+        background-color: var(--cor2);
+    }
+
+    && ul li a{
+        text-decoration: none;
+        display: block;
+        color: var(--corbranca);
+        padding: 2.5rem;
+    }
+}
+.logo{
+    height: 8rem;
+    width: 13rem;
+    align-content: center;
+
+}
+
+.sec1 {
+    background-image: url(img/romildofundo.png);
+    background-size: cover;
+    min-height: 90rem;
+    padding-top: 8.1rem;
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+
+    && .sobreromildo{
+        display: grid;
+        grid-template-columns: 3fr 1.5fr;   
+        text-align: center; 
+        gap: 0rem;
+
+    }
+    && .romildo{
+        display: flex;
+        flex-direction: column;
+        width: 70rem;
+        height: 50rem;
+        font-family: 'Libre Baskerville';
+        
+    }
+    && .romildo p{
+        font-size: 2.2rem;
+        color:var(--corbranca);
+        line-height: 2.8rem;
+    }
+    && .romildo a:link{
+        text-decoration: none;
+        color: var(--corbranca);
+    }
+    && .romildo a:visited{
+        text-decoration: none;
+        color: var(--corbranca);
+    }
+} 
+ 
+.intro-img img{
+    width: 80rem;
+    height: 50rem;
+    overflow: hidden;
+}
