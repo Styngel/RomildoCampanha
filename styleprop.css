@@ -75,43 +75,48 @@ h1{
     margin-left: 5rem;
 }
 
-.sec1 {
-    background-image: url(img/romildofundo.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat:no-repeat;
-    min-height: 90vh;
+.intro {
+    background-color: var(--cor3);
+    min-height: 35vh;
     padding-top: 8.1rem;
-    display: flex; 
-    justify-content: space-around;
-    align-items: center;
+    padding-bottom: 4rem;
+    color: var(--corbranca);
+    border-bottom: 0.1rem solid #3377bf;
+
+}
+.intro-content{
 
 
-    }
-    && .romildo{
-        margin-left: 40rem;
-        display: flex;
-        flex-direction: column;
-        text-align: center; 
-        max-width: 70rem;
-        max-height: 50rem;
-        font-family: 'Libre Baskerville';   
-        color: var(--corbranca);
-        
-    }
-    && .romildo p{
-        font-size: 2.2rem;
-        line-height: 2.8rem;
-        font-weight: 600;
-        
-    }
-    && .romildo a:link{
-        text-decoration: none;
-        color: var(--corbranca);
-    }
-    && .romildo a:visited{
-        text-decoration: none;
-        color: var(--corbranca);
+    && h1{
+        text-align: center;
+        padding-top: 3rem;
     }
 
- 
+    && p{
+        text-align: center;
+        padding-top: 2rem;
+    }
+}
+
+.page {
+    min-height: 65vh;
+    padding-top: 4rem;
+    background-color: var(--cor3);
+
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem; 
+    min-height: 65vh;
+    color: var(--corbranca);
+   
+    && h1{
+        font-size: 3rem;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+
+     
