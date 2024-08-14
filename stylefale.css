@@ -1,0 +1,49 @@
+:root {
+    --cor1:#00b5f7;
+    --cor2:#0d5189;
+    --cor3:#30386f;
+    --cor4:#ED3237;
+    --corbranca:#fff;
+    --corpreta:#000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth ;
+}
+body {
+    font-family: 'Libre Baskerville';
+    font-size: 2rem;
+}
+h1{
+    font-family: 'montserrat';
+    font-size: 4.5rem;
+    }
+ 
+.center-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    }
+
+
+.intro{
+    display: flex;
+    text-align: center;
+    background-color: var(--cor3);
+    height: 100vh;
+    width: 100%;
+    padding-top: 8.1rem;
+}
+
+.intro-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--corbranca);
+}
