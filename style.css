@@ -64,15 +64,12 @@ h1{
         font-weight: 600;
         
     }
-    && .romildo a:link{
+    && .romildo p a:link{
         text-decoration: underline;
-        color: var(--corbranca);
+        color: var(--cor1);
     }
-    && .romildo a:visited{
-        text-decoration: none;
-        color: var(--corbranca);
-    }
-    && .romildo a:visited{
+    
+    && .romildo p a:visited{
         text-decoration: none;
         color: var(--corbranca);
     }

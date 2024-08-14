@@ -58,9 +58,10 @@ h1{
 
 .page {
     min-height: 65vh;
-    padding-top: 4rem;
     background-color: var(--cor3);
-
+    text-align: center;
+    color: var(--corbranca);
+    padding-top: 8rem;
 }
 .main-grid{
     display: grid;
@@ -84,7 +85,16 @@ h1{
     background-color: var(--cor2);
     border: 0.1rem solid var(--corbranca);
     cursor: pointer; 
+    margin-top: 2rem;
     
+    && a:link{
+        text-decoration: none;
+        color: var(--corbranca);
+    }
+
+    && a:visited{
+        text-decoration: none;
+        color: var(--corbranca);}
 }
 .flex-topics:hover{
     transform: translate(0, -15%) scale(1.15) rotate(0deg);
@@ -92,4 +102,32 @@ h1{
     text-decoration: underline;
     text-shadow: 0.3rem 0.5rem 3rem var(--corbranca);
     transition: all 750ms ease-in-out;
+}
+
+#tema1, #tema2,#tema3,#tema4,#tema5,#tema6,#tema7,#tema8,#tema9,#tema10 {
+    display: none;
+    transition: all 500ms ease-in-out;
+}
+
+.temas{
+    color: var(--corbranca);
+    border-bottom: 0.1rem solid var(--cor1);
+    font-family: "Libre Baskerville";
+    font-size: 2rem;
+    word-spacing: 0.1rem;
+    transition: all 500ms ease-in-out;
+    && p{
+        padding: 2rem 0rem;
+        text-indent: 0.5rem;
+        border-left: 0.1rem solid var(--cor1);
+        border-right: 0.1rem solid var(--cor1);
+        text-align: left;
+    }
+
+    && h1{
+        text-align: center;
+        width: auto;
+        border-bottom: 0.1rem solid var(--cor1);
+        font-family: 'montserrat';
+    }
 }
