@@ -20,7 +20,7 @@ function h1vem(){
     h1.style.display = "block"
 }
 
-function ocultarTodosTemas() {
+function ocultarTemas() {
     temas.forEach(tema => {
         tema.style.display = "none";
     });
@@ -35,16 +35,9 @@ function mostrartema(index) {
         
     } 
     else {
-        ocultarTodosTemas();
+        ocultarTemas();
         h1vai();
         tema.style.display = "block"; 
         
     }
 }
-
-
-
-
-// Exemplo de uso: 
-// mostrartema(0); // Mostra o tema1
-// mostrartema(1); // Mostra o tema2

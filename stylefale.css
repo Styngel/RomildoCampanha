@@ -35,15 +35,101 @@ h1{
 .intro{
     display: flex;
     text-align: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: var(--cor3);
-    height: 100vh;
+    height: 95vh;
     width: 100%;
     padding-top: 8.1rem;
 }
 
-.intro-content{
+.intro-text{
     display: flex;
     justify-content: center;
     flex-direction: column;
     color: var(--corbranca);
+    gap: 5rem;
+    padding-bottom: 5rem;
+}
+
+fieldset legend{
+    font-weight: 500;
+    text-decoration: underline;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    color: var(--cor1);
+}
+
+fieldset{
+    width: auto;
+    border:solid 0.1rem var(--cor1) ;
+
+
+}
+
+h1{
+    font-size: 5rem;
+}
+
+
+.form-flex {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+    padding-top: 1rem;
+    overflow: hidden;
+}
+
+.form-gap legend {
+    text-align: center;
+    padding-bottom: 2.25rem;
+    font-style: italic;
+    text-decoration: underline;
+    padding-top: 0.5rem;
+    border: none;
+}
+
+.form {
+    flex: 1 1 auto;
+}
+
+.form label{
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    color: var(--corbranca);
+    font-family: 'montserrat';
+}
+
+.form input, textarea {
+    border: inherit;
+    background-color: #18153abe;
+    padding: 1.4rem 2rem;
+    width: 100%;
+    color:var(--corbranca);
+    font-size: 1.8rem;
+    font-family:'Libre Baskerville';
+}
+
+.message {
+    flex:1 1 100%;
+}
+
+.form button{
+    border: 0.1rem solid #ffffff;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+}
+
+.form ::placeholder { 
+    color: var(--cor1);
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    margin-top: -1rem;
+    color:var(--cor1);
+    background-color: #18153a;
 }

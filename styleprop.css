@@ -43,8 +43,6 @@ h1{
 
 }
 .intro-content{
-
-
     && h1{
         text-align: center;
         padding-top: 3rem;
@@ -62,6 +60,7 @@ h1{
     text-align: center;
     color: var(--corbranca);
     padding-top: 8rem;
+    padding-bottom: 5rem;
 }
 .main-grid{
     display: grid;
@@ -69,7 +68,7 @@ h1{
     gap: 3rem; 
     min-height: 65vh;
     color: var(--corbranca);
-   
+   overflow: hidden;
     && h1{
         font-size: 3rem;
         text-align: center;
@@ -129,5 +128,88 @@ h1{
         width: auto;
         border-bottom: 0.1rem solid var(--cor1);
         font-family: 'montserrat';
+    }
+}
+
+/*----------------------------------------------------------------------*/
+
+@media (max-width:1200px){
+    .intro-content {
+        && h1 {
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+
+        && p{
+            padding: 0 2rem;
+        }
+    }
+
+
+.page{
+    
+    && h1{
+        font-size: 3rem;
+    }
+}
+
+}
+@media (max-width:640px){
+    .main-grid{
+        grid-template-columns: 1fr 1fr;   
+    }
+    .space{
+        display: none;
+    }
+}
+
+@media (max-width:380px)
+{
+    .intro-content {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        && h1{
+            font-size: 3.5rem;
+            height: 5rem;
+            padding-top: 5rem;
+            font-weight: 650;
+            padding-bottom: 7rem;
+        }
+        && p {
+            text-align: left;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+    }
+
+    .page{
+        && h1{
+        font-size: 2.5rem;
+        font-weight: 800;
+        padding-bottom: 2rem;
+        padding-top: 3rem;
+        }
+        && .main-grid{
+            grid-template-columns: 1fr;
+            padding: 0rem 2rem;
+            border: none;
+            gap: 2rem
+        }
+        && .temas{
+            text-align: center;
+            margin: 2rem 0rem;
+            border: 0.1rem solid var(--cor1);
+            
+        }
+        .temas h1{
+            border-bottom: 0.0rem;
+        }
+        .temas p{
+            text-align: left;
+            border: none;
+            padding: 2rem 2rem;
+        }
     }
 }
