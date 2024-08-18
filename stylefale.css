@@ -133,7 +133,7 @@ button {
     display: none;}
 
 /*----------------------------------------------*/
-@media (max-width:380px){
+@media (max-width:480px){
 
     .intro-text{
         padding-bottom: 3rem;
