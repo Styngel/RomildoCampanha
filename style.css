@@ -111,7 +111,7 @@ display: none;}
     transform:scale(1.9);
 }
 #intro {
-    height: 105vh;
+    height:85rem;
     width: 100%;
     overflow: hidden;
 }

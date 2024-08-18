@@ -71,7 +71,7 @@ function fechartodas(){
 }
 function mostrartodas(){
     todas.forEach(todes => {
-        todes.style.display = "block";
+        todes.style.display = "";
 })
 }
 
