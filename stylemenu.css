@@ -9,6 +9,11 @@
 
 }
 
+.menubotao{
+    display:none;
+    padding: 1rem;
+}
+
 .logo{
     height: 7rem;
     width: 7rem;
@@ -21,7 +26,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    height: 8rem;
     && a{
         position: relative;
     }
@@ -119,7 +124,7 @@
     max-height: 2.8rem;
     max-width: 2.8rem;
     border-radius: 50%;
-    background-color: var(--cor3);
+    background-color: #18153a;
     margin: auto 0.5rem;
     display: flex;
     justify-content: center;
@@ -188,8 +193,90 @@
 
 @media (max-width:380px){
 
-.menu nav{
+.nav{
     display: none;
+}
+
+.menu-content{
+    justify-content: space-around;
+}
+
+#navmobile{ 
+    display: none;
+    padding: 3rem;
+    height: 78vh;
+    background-color: var(--cor2);
+    color: var(--corbranca);
+    padding-top: 8.1rem;
+}
+
+.menumobile{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: end;
+    height: 30vh;
+
+    && ul li a {
+        display: inline-block;
+        min-height: 3rem;
+        padding: 1rem 0rem;
+        text-align: center;
+        text-decoration: none;
+        color:inherit;
+        font-size: 1.8rem;
+        font-weight: bold;
+        align-content: center;
+}
+}
+.gridmenumobile {
+    display: grid;
+    grid-template-rows: 1.5fr 1.5fr;
+    background-color: var(--cor2);
+    height: 60vh;
+}
+.ulgrid ul li a:hover{
+    color: var(--cor1);
+    transition: all 300ms ease-in-out;
+    text-decoration: underline;
+    text-shadow: 0.2rem 0.2rem 1rem var(--corbranca);
+}
+
+.img-menu{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    height: 100%;   
+    align-items: center;
+}
+
+#imgirmaos{
+    display: none;
+    height: 19rem;
+    width: 25rem;
+    align-content: center;
+    overflow: hidden;
+    transform:scale(1.5);
+    padding: 0 1rem;
+}
+
+.menubotao{display: block;}
+.menubotao::after{
+    content: '☰';
+    z-index: 2;
+    right: 1rem;
+    margin-top: 2.5rem;
+    background: #18153a;
+    color: var(--cor1);
+    text-align: center;
+    min-width: 5rem;
+    min-height: 5rem;
+    padding: 0.5rem 0.8rem;
+    cursor: pointer;
+    border: 0.1rem solid var(--cor1) ;
+}
+.mbutton:checked~.close-menu::after{
+    content: '×';
 }
     .menu-content a {
         padding: 0rem 2rem;

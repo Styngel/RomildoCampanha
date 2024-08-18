@@ -36,7 +36,7 @@ h1{
     display: flex;
     text-align: center;
     background-color: var(--cor3);
-    height: 100vh;
+    height: 78vh;
     width: 100%;
     padding-top: 8.1rem;
 }
@@ -46,4 +46,18 @@ h1{
     justify-content: center;
     flex-direction: column;
     color: var(--corbranca);
+}
+
+
+/*----------------------------------------------------------------*/
+
+@media (max-width:380px){
+
+.intro-content h1{
+    padding: 0 1rem;
+}
+.intro-content p{
+    padding: 3rem;
+    font-weight: 500;
+}
 }

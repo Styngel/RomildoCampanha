@@ -36,7 +36,7 @@ h1{
     display: flex;
     text-align: center;
     background-color: var(--cor3);
-    height: 100vh;
+    height: 78vh;
     width: 100%;
     padding-top: 8.1rem;
 }
@@ -50,6 +50,20 @@ h1{
     && h1{
         font-weight: bold;
         text-decoration: underline;
-        padding-bottom: 6rem;
+        padding-bottom: 3rem;
     }
+}
+
+/*----------------------------------------------------------------*/
+
+@media (max-width:380px){
+
+.intro-content h1{ 
+    padding: 2rem 1rem;
+    padding-bottom: 1rem;
+}
+.intro-content p{
+    padding: 2rem;
+    font-weight: 900;
+}
 }
