@@ -191,6 +191,10 @@
     }
 }
 
+.infos h6{
+    display: none;
+}
+/*------------------------------------------------------------------------------------------*/
 @media (max-width:380px){
 
 .nav{
@@ -321,6 +325,7 @@
 
     }
     .infos h6{
+        display: block;
         width: 21rem;
         padding-bottom: 2rem;
     }

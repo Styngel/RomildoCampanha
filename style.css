@@ -39,16 +39,15 @@ h1{
     background-size: cover;
     background-position: center center;
     background-repeat:no-repeat;
-    min-height: 90vh;
+    min-height: 91.1vh;
     padding-top: 8.1rem;
     display: flex; 
     justify-content: space-around;
     align-items: center;
 
-
     
     && .romildo{
-        margin-left: 40rem;
+        margin-left: 60rem;
         display: flex;
         flex-direction: column;
         text-align: center; 
@@ -57,13 +56,12 @@ h1{
         max-height: 50rem;
         font-family: 'Libre Baskerville';   
         color: var(--corbranca);
-        
     }
+
     && .romildo p{
         font-size: 2.2rem;
         line-height: 2.8rem;
         font-weight: 600;
-        
     }
     && .romildo p a:link{
         text-decoration: underline;
@@ -76,6 +74,12 @@ h1{
     }
 
 }
+.grid-mobile{
+    display: none;
+}
+#navmobile{
+display: none;}
+
 
 /*----------------------------------------------------------------*/
 
