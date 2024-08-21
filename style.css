@@ -74,28 +74,103 @@ h1{
     }
 
 }
-.grid-mobile{
-    display: none;
-}
 #navmobile{
 display: none;}
+
+.intro-img{
+    display: none;
+}
+
+.romildo{
+    display: block;
+}
 
 
 /*----------------------------------------------------------------*/
 
-@media (max-width:480px){
 
-    .sec1{
+@media (max-width:1200px){
+    #intro .romildo {       
+    margin-left: 0rem;
+}
+    #intro{
         background-color: var(--cor3);
         background-image: none;
-        display: block; 
+        display: flex;
+        flex-flow:column ;
+        justify-content: center; 
+        height:60rem;   
+    }
+    .grid-responsive{
+        display: grid;
+        grid-template-columns: 1.5fr 2.5fr;
+        height: 50rem;
+    }
+   
+    .img-intro{
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+        height: 25rem;
+    }
+    .intro-img{
+        display: block;
+        height: 22rem;
+        width: 35rem;
+        align-content: center;
+        overflow: hidden;
+        transform:scale(1.9);
+    }
+}
+
+@media (max-width:770px){
+    #intro {
+        height:80rem;
+    }
+    .grid-responsive{
+        display: block;
+    }
+    .grid-mobile{
+        display: grid;
+        grid-template-rows: 0.5fr 4.5fr;
+        height: 80rem;
+        padding-top: 8.1rem;
+    }
+    .img-intro{
+        display: flex;
+        justify-content: center;
+        height: 25rem;
+        padding-top: 3rem;
+    }
+    .intro-img{
+        display: block;
+        height: 12rem;
+        width: 20rem;
+        align-content: center;
+        overflow: hidden;
+        transform:scale(1.9);
+    }
+    #intro .romildo {
+        margin-top: -4rem;
+    }
+}
+@media (max-width:480px){
+
+#intro{
+    background-color: var(--cor3);
+    background-image: none;
+    display: block; 
+    width: 100%;
 }
 .grid-mobile{
     display: grid;
-    grid-template-rows: 1.5fr 1.5fr;
-    height: 60vh;
+    grid-template-rows: 1.5fr 3.5fr;
+    height: 80rem;
+    padding-top: 0rem;
 }
-
+.grid-responsive{
+    display: block;
+}
 .img-intro{
     display: flex;
     justify-content: center;
@@ -111,9 +186,10 @@ display: none;}
     transform:scale(1.9);
 }
 #intro {
-    height:85rem;
+    height:95rem;
     width: 100%;
     overflow: hidden;
+    padding-top: 8.1rem;
 }
 #intro .romildo {
     display: flex;
@@ -122,6 +198,7 @@ display: none;}
     font-family: 'Libre Baskerville';   
     color: var(--corbranca);
     margin: 0;
+    height: 100%;
 
     && h1{
         font-size: 2.5rem;
@@ -135,3 +212,13 @@ display: none;}
     }
 }
 }
+@media (max-width:345px){
+    #intro {
+        height:105rem;
+    }
+}
+@media (max-width:290px){
+    #intro {
+        height:115rem;}
+}
+

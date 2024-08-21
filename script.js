@@ -21,6 +21,8 @@ const todas = [
 
 const imgirmaos = document.getElementById('imgirmaos')
 
+const footer = document.getElementById('footer')
+
 function h1vai(){
     h1.style.display = "none"
 }
@@ -51,12 +53,14 @@ function mostrartema(index) {
 function mostrarmenu(){
     if (nav.style.display == "block"){
         nav.style.display = 'none';
+        footer.style.position = '';
         mostrartodas();
         ocultarIrmaos();
     } else{
         nav.style.display = "block";
         fechartodas();
         mostrarIrmaos();
+        mostrarFooter();
     }
 }
 
@@ -80,4 +84,8 @@ function mostrarIrmaos(){
 }
 function ocultarIrmaos(){
     imgirmaos.style.display = "none";
+}
+
+function mostrarFooter(){
+    footer.style.position = "fixed"
 }

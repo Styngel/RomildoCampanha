@@ -69,6 +69,8 @@ h1{
     min-height: 65vh;
     color: var(--corbranca);
    overflow: hidden;
+   margin-top: 2rem;
+
     && h1{
         font-size: 3rem;
         text-align: center;
@@ -84,7 +86,7 @@ h1{
     background-color: var(--cor2);
     border: 0.1rem solid var(--corbranca);
     cursor: pointer; 
-    margin-top: 2rem;
+    padding: 2rem 2rem;
     
     && a:link{
         text-decoration: none;
@@ -154,30 +156,40 @@ h1{
         font-size: 3rem;
     }
 }
-
 }
-@media (max-width:640px){
+
+@media (max-width:770px){
+    #intro {
+        padding-top: 17.1rem;
+    }
     .main-grid{
         grid-template-columns: 1fr 1fr;   
+        padding: 0 2rem;
     }
     .space{
         display: none;
     }
+    .temas{
+        padding: 0 2rem;
+    }
 }
 
-@media (max-width:480px)
-{
+@media (max-width:480px){
+    #intro {
+        padding-top: 8.1rem;
+        padding-bottom: 0rem;
+        min-height:65rem ;
+    }
     .intro-content {
-        height: 90vh;
+        height: 65rem;
         display: flex;
-        justify-content: center;
-        flex-flow: row wrap;
+        flex-flow: column;
         && h1{
             font-size: 3.5rem;
             height: 5rem;
-            padding-top: 5rem;
+            padding-top: 4rem;
             font-weight: 650;
-            padding-bottom: 6rem;
+            padding-bottom: 7rem;
         }
         && p {
             text-align: left;
@@ -195,7 +207,7 @@ h1{
         }
         && .main-grid{
             grid-template-columns: 1fr;
-            padding: 0rem 2rem;
+            padding: 0rem 4rem;
             border: none;
             gap: 2rem
         }

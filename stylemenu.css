@@ -1,3 +1,32 @@
+:root {
+    --cor1:#00b5f7;
+    --cor2:#0d5189;
+    --cor3:#30386f;
+    --cor4:#ED3237;
+    --corbranca:#fff;
+    --corpreta:#000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth ;
+}
+body {
+    font-family: 'Libre Baskerville';
+    font-size: 2rem;
+}
+h1{
+    font-family: 'montserrat';
+    font-size: 4.5rem;
+    }
+
+/*---------------------------------------------------------------------------------*/
 .menu{
     background-color: var(--cor2);
     min-height: 8rem;
@@ -155,7 +184,7 @@
     height: 10px;
     width: 90%;
     opacity: 0;
-    background: radial-gradient(ellipse at center,rgba(0,0,0,.35) 0,rgba(0,0,0,0) 80%);
+    background: radial-gradient(ellipse at center,rgba(0, 181, 247, .35) 0,rgba(0, 0, 0, 0) 80%);
     transition: all 300ms ease-in-out;
 }
 .social-shadow:active:before,.social-shadow:focus:before,.social-shadow:hover:before {
@@ -195,14 +224,52 @@
     display: none;
 }
 /*------------------------------------------------------------------------------------------*/
+@media (max-width:770px){
+
+    .menu {
+        min-height: 17rem;
+
+    
+    
+    && .menu-content{
+        flex-flow: column;
+    }
+
+    && .logo{
+        margin: 0;
+    }
+}
+}
+@media (max-width:630px){
+    .menu {
+        min-height: 13rem;
+    }
+    .menu-content a{
+        display: none;
+    }
+    .menu-content .nav{
+        min-height: 13rem;
+    }
+    #menu .menu-content ul li a {
+        padding: 1rem;
+        }
+    
+}
 @media (max-width:480px){
 
+    .menu {
+        min-height: 8rem;
+    }
 .nav{
     display: none;
 }
 
-.menu-content{
+#menu .menu-content{
     justify-content: space-around;
+    flex-direction: row;
+}
+.menu-content a{
+    display: block;
 }
 
 #navmobile{ 
@@ -297,6 +364,7 @@
     }
 
 .footer {
+    width: 100%;
     height: 26.5rem;
     && .footer-content{
         display: block;
@@ -335,6 +403,21 @@
         width: 21rem;
         padding-bottom: 2rem;
     }
-    
 }
+}
+
+@media (max-width:370px){
+    .footer{
+        height: 20rem;
+        display: block;
+        bottom: 0%;
+        width: 100%;
+
+    && .infos h6{
+        padding-bottom: 0rem;
+    }
+}
+    #navmobile{
+        position: fixed;
+    }   
 }
