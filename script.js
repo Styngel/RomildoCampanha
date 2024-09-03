@@ -23,6 +23,10 @@ const imgirmaos = document.getElementById('imgirmaos')
 
 const footer = document.getElementById('footer')
 
+const cnpjtxt = document.getElementById('cnpjtxt')
+
+const seta = document.getElementById('seta')
+
 function h1vai(){
     h1.style.display = "none"
 }
@@ -87,5 +91,21 @@ function ocultarIrmaos(){
 }
 
 function mostrarFooter(){
-    footer.style.position = "fixed"
+    footer.style.position = "fixed";
+}
+
+function cnpjs(){
+   if (cnpjtxt.style.display == "none"){
+       cnpjtxt.style.display = 'block';
+       setaabre();
+  } else {
+        cnpjtxt.style.display = "none";
+        setafecha();
+    } }
+  
+function setaabre(){
+    seta.style.transform = "rotatex(180deg)"
+}
+function setafecha(){
+    seta.style.transform = "rotatex(0deg)"
 }

@@ -118,7 +118,7 @@ h1{
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -192,20 +192,35 @@ h1{
     transform: translateY(5px)
 }
 
+.cnpjs {
+    color: var(--cor1);
+    text-align: center;}
+    .cnpjs h5{
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        cursor: pointer;
+    }
+    .cnpjs h5:hover{
+        text-decoration: underline;
+    }
+    .cnpjs p{ 
+        font-size: 1rem;
+    }
 
+#seta {
+    transform: rotatex(0deg);
+    writing-mode: vertical-lr;
+}
 .infos{
     display: flex;
-    justify-content: end;
     align-items: center;
     text-align: center;
     color: var(--cor1);
     height: 8rem;
-    width: 80rem; 
 }
 .infos p{
     font-size: 1rem;
     font-weight: 500;
-    padding-top: 1.5rem;
     max-width: 40rem;
     && a:link{
         color:inherit;
@@ -220,9 +235,7 @@ h1{
     }
 }
 
-.infos h6{
-    display: none;
-}
+
 /*------------------------------------------------------------------------------------------*/
 @media (max-width:770px){
 
@@ -370,7 +383,7 @@ h1{
         display: block;
     }
     && .medias{
-        padding: 2rem 8rem 0rem 8rem;
+        padding: 2rem 8rem 2rem 8rem;
         justify-content: space-between;
     }
 
@@ -383,7 +396,6 @@ h1{
     && .infos{
         width: auto;
         flex-flow: column;
-        justify-content: end;
     }
 
     .infos p{
@@ -405,19 +417,6 @@ h1{
     }
 }
 }
-
-@media (max-width:370px){
-    .footer{
-        height: 20rem;
-        display: block;
-        bottom: 0%;
-        width: 100%;
-
-    && .infos h6{
-        padding-bottom: 0rem;
-    }
-}
-    #navmobile{
-        position: fixed;
-    }   
+.cnpjs {
+    padding-bottom: 2rem;
 }

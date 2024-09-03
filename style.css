@@ -35,7 +35,7 @@ h1{
 
 
 .sec1 {
-    background-image: url(img/romildofundo.png);
+    background-image: url('img/romildofundo.png');
     background-size: cover;
     background-position: center center;
     background-repeat:no-repeat;
@@ -125,6 +125,7 @@ display: none;}
 
 @media (max-width:770px){
     #intro {
+        padding-top: 15rem;
         height:80rem;
     }
     .grid-responsive{

@@ -69,7 +69,7 @@ h1{
     min-height: 65vh;
     color: var(--corbranca);
    overflow: hidden;
-   margin-top: 2rem;
+   padding-top: 2rem;
 
     && h1{
         font-size: 3rem;
@@ -207,13 +207,12 @@ h1{
         }
         && .main-grid{
             grid-template-columns: 1fr;
-            padding: 0rem 4rem;
+            padding: 2rem 4rem;
             border: none;
             gap: 2rem
         }
         && .temas{
             text-align: center;
-            margin: 2rem 0rem;
             border: 0.1rem solid var(--cor1);
             
         }
