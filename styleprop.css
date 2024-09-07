@@ -33,6 +33,11 @@ h1{
 
 /*--------------------------------------------------------------------------------*/
 
+.prop{
+    text-decoration: underline;
+    list-style:circle;
+}
+
 .intro {
     background-color: var(--cor3);
     min-height: 35vh;

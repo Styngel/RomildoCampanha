@@ -2,7 +2,7 @@
     --cor1:#00b5f7;
     --cor2:#0d5189;
     --cor3:#30386f;
-    --cor4:#ED3237;
+    --corverm:#ED3237;
     --corbranca:#fff;
     --corpreta:#000;
 }
@@ -113,7 +113,6 @@ h1{
     background-color: var(--cor2);
     height: 8.1rem;
     border-top: solid 0.1rem var(--cor1);
-
 }
 
 .footer-content {

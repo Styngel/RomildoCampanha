@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=1.2">
     <link rel="stylesheet" href="stylemenu.css">
     <title>Romildo Pereira</title>
 </head>
@@ -16,9 +16,9 @@
         <div class="menubotao" onclick="mostrarmenu()"></div>
             <nav class="nav">
             <ul>
-                <li> <a href="index.html" class="lis">Inicio</a> </li>
+                <li class="inc"> <a href="index.html" class="lis">Inicio</a> </li>
                 <li> <a href="propostas.html" class="lis"> Propostas</a> </li>
-                <li> <a href="pauta-bomba.html" class="lis"> Pauta Bomba</a> </li>
+                <li> <a href="videos.html" class="lis"> Videos</a> </li>
                 <li> <a href="feitos.html" class="lis"> Feitos</a> </li>
                 <li> <a href="fale.html" class="lis"> Fale Comigo</a> </li>
             </ul>
@@ -31,9 +31,9 @@
             alt="logo do partido Mobiliza" id="imgirmaos"></a>
             <nav class="menumobile">
             <div class="ulgrid"><ul> 
-                <li> <a href="index.html" onclick="fecharnav()">Inicio</a> </li>
+                <li class="inc"> <a href="index.html" onclick="fecharnav()">Inicio</a> </li>
                 <li> <a href="propostas.html" onclick="fecharnav()"> Propostas</a> </li>
-                <li> <a href="pauta-bomba.html" onclick="fecharnav()"> Pauta Bomba</a> </li>
+                <li> <a href="videos.html" onclick="fecharnav()"> Videos</a> </li>
                 <li> <a href="feitos.html" onclick="fecharnav()"> Feitos</a> </li>
                 <li> <a href="fale.html" onclick="fecharnav()"> Fale Comigo</a> </li>
             </ul></div>
@@ -41,9 +41,22 @@
         </div>
     </aside>
     <section class="sec1" id="intro">
-        <div class="grid-mobile"> <div class="grid-responsive">
-        <div><a class="img-intro"> <img src="img/romildofundo1.png" class="intro-img"></a></div>
-        <div class="romildo center-content">
+        <div class="grid-mobile center-content"> 
+            <div class="grid-main grid-responsive">
+                <div class="img-intro"><a> <img src="img/romildofundo1.png" class="intro-img"></a></div>
+                <div class="romildo center-content">
+                <h1>Romildo Pereira</h1>
+                <p>Nascido e criado em Três Marias, teve sua raiz familiar ativa na política 
+                desde o surgimento dela na cidade.</p><p> Conectado por sangue com a politica 
+                Trimariense, Romildo foi eleito como vereador atuando de 2017 à 2020 tendo
+                contribuído assim para <a href="feitos.html"> diversos projetos e melhorias.</a></p>
+                <p> Para o ano de 2024 ele se apresenta oficialmente como candidato a prefeitura 
+                com novas e <a href="propostas.html">melhores propostas</a> para a saúde a economia e o turismo municipal.</p>
+                </div>
+        </div>
+        <div class="main-grid">
+            <div class="img-intro"><a> <img src="img/romildofundo1.png" class="intro-img"></a></div>
+            <div class="romildo center-content">
             <h1>Romildo Pereira</h1>
             <p>Nascido e criado em Três Marias, teve sua raiz familiar ativa na política 
             desde o surgimento dela na cidade.</p><p> Conectado por sangue com a politica 
@@ -51,7 +64,8 @@
             contribuído assim para <a href="feitos.html"> diversos projetos e melhorias.</a></p>
             <p> Para o ano de 2024 ele se apresenta oficialmente como candidato a prefeitura 
             com novas e <a href="propostas.html">melhores propostas</a> para a saúde a economia e o turismo municipal.</p>
-        </div></div></div>
+            </div>
+        </div>
     </section>
     <section id="page"></section>
     <footer class="footer" id="footer">

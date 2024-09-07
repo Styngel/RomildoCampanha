@@ -32,6 +32,11 @@ h1{
 }
 
 
+.fc{
+    text-decoration: underline;
+    list-style:circle;
+}
+
 #intro{
     padding-top: 8.1rem;
 }

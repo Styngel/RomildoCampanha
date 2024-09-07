@@ -32,6 +32,12 @@ h1{
     }
 
 
+    .ft{
+        text-decoration: underline;
+        list-style:circle;
+    }
+
+
 .intro{
     display: flex;
     text-align: center;

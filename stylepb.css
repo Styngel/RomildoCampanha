@@ -2,7 +2,7 @@
     --cor1:#00b5f7;
     --cor2:#0d5189;
     --cor3:#30386f;
-    --cor4:#ED3237;
+    --cor4:#214563;
     --corbranca:#fff;
     --corpreta:#000;
 }
@@ -31,45 +31,209 @@ h1{
     margin: 0 auto;
     }
 
+/*-----------------------------------------------------------------------------------*/
 
-.intro{
-    display: flex;
-    text-align: center;
+.pb{
+    text-decoration: underline;
+    list-style:circle;
+}
+#intro{
+    display: block;
     background-color: var(--cor3);
-    height: 91.1vh;
+    min-height: 15rem;
     width: 100%;
     padding-top: 8.1rem;
 }
-
 .intro-content{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex-flow: column;
     color: var(--corbranca);
+}
+.intro-content h1{
+    padding: 2rem 0;
+    font-size: 3rem;
+}
+.videos{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    padding: 0rem 2rem;
+}
+#video0, #video1, #video2{
+    display: none;
+}
+
+#hcohab{
+    display: none;
+}
+#hraiz{
+    display: none;
+}
+
+#page {
+    min-height: 67.2rem;
+    padding: 2rem 0;
+    background-color: var(--cor3);
+}
+.page-content{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    color: var(--corbranca);
+}
+
+.page-content h1{
+    font-size: 3rem;
+    text-align: center;
+
+}
+.main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*repeat(auto-fit, minmax(200px, 800px));*/
+    gap: 3rem; 
+    min-height: 34rem;
+    /*min-height: 68rem;*/
+    width: 100%;
+
+}
+#navmobile{
+    display: none;
+}
+
+
+.itens{ 
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-flow:wrap;
+    justify-content: center;
+    color: var(--corbranca);
+    cursor: pointer;
+    max-height: 30rem;
+    max-width: 38rem;
+    text-transform: uppercase;
+}
+.itens h1{
+    background-image: linear-gradient(90deg, #000, #000);
+    background-clip: text;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(4rem/16);
+    -webkit-background-clip: text;
+    color: var(--corbranca);
+}
+.hs{
+    background-image: linear-gradient(90deg, #000, #000);
+    background-clip: text;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(1rem/16);
+    -webkit-background-clip: text;
+}
+.item2{
+    background-image: url(/img/raizes1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item1 {
+    background-image: url(/img/sonho1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+
+.item0{
+    background-image:url(/img/ponte1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+
+.hs{
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 
     && h1{
-        font-weight: bold;
-        text-decoration: underline;
+        padding-top: 3.5rem;
+        padding-bottom: 0rem;
+    }
+    && h2{
         padding-bottom: 3rem;
     }
 }
-#navmobile{
-    display: none;}
 
 /*----------------------------------------------------------------*/
 
+@media (max-width:1200px){
+    .main-grid{
+        grid-template-columns: 1fr 1fr; 
+        min-height: 41rem;
+        /*min-height: 68rem;*/
+        width: 80%;
+        gap:2rem;
+    }
+    .itens{
+    justify-self: center;
+    min-height: 24rem;
+    min-width: 20rem;
+}
+}
+
+@media (max-width:1000px){
+    .main-grid{
+        grid-template-columns: 1fr 1fr; 
+        min-height: 41rem;
+        /*min-height: 68rem;*/
+        width: 100%;
+    }
+    .itens{
+    justify-self: center;
+    min-height: 20rem;
+    min-width: 16rem;
+}
+
+}
+@media (max-width:770px){
+    #intro{
+        padding-top: 17rem;
+    }
+    .main-grid{
+        grid-template-columns: 1fr;   
+        padding: 0 2rem;
+    }
+}
+
 @media (max-width:480px){
+    #intro{
+        padding-top: 8.1rem;
+    }
+#page{
+    min-height: 105rem;
 
-.intro{
-    height: 78vh;
+}
 
+.main-grid{
+    grid-template-rows: 1fr;
+    padding: 0rem 4rem;
+    border: none;
+    gap: 2rem;
 }
-.intro-content h1{ 
-    padding: 2rem 1rem;
-    padding-bottom: 1rem;
 }
-.intro-content p{
-    padding: 2rem;
-    font-weight: 900;
-}
+
+@media (max-width:480px){
+    .itens{
+        min-height: 24rem;
+        min-width: 16rem;
+    }
+
+
 }

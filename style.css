@@ -33,12 +33,13 @@ h1{
 
 /*--------------------------------------------------------------------------------*/
 
+.inc{
+    text-decoration: underline;
+    list-style:circle;
+}
 
 .sec1 {
-    background-image: url('img/romildofundo.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat:no-repeat;
+    background-color: var(--cor3);
     min-height: 91.1vh;
     padding-top: 8.1rem;
     display: flex; 
@@ -47,7 +48,6 @@ h1{
 
     
     && .romildo{
-        margin-left: 80rem;
         display: flex;
         flex-direction: column;
         text-align: center; 
@@ -73,18 +73,57 @@ h1{
         color: var(--corbranca);
     }
 
+    .grid-main{
+        display: grid;
+        grid-template-columns: 0.5fr 1fr; 
+        height: 50rem;
+        justify-content: center;
+        gap: 3rem;
+        
+    }
+    
+
+.img-menu{
+    height: auto;
+    width: auto;
+    background-color: #00b5f7;
+}
+
 }
 #navmobile{
 display: none;}
 
 .intro-img{
-    display: none;
+    max-height: 50rem;
+    max-width: 75rem;
+    margin-left: -10rem;
+    margin-right: -10rem;
 }
+
+.img-intro{
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin-top: -15rem;
+    
+}
+
+.img-intro a{
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    min-width: 100%;
+    
+}
+
 
 .romildo{
     display: block;
 }
 
+.main-grid{
+    display: none;
+}
 
 /*----------------------------------------------------------------*/
 
@@ -96,63 +135,89 @@ display: none;}
     #intro{
         background-color: var(--cor3);
         background-image: none;
-        display: flex;
-        flex-flow:column ;
+        display: block;
         justify-content: center; 
         height:60rem;   
     }
-    .grid-responsive{
-        display: grid;
-        grid-template-columns: 1.5fr 2.5fr;
-        height: 50rem;
+    .romildo {
+        padding: 2rem;
     }
+    
    
     .img-intro{
         display: flex;
         justify-content: center;
-        padding-top: 3rem;
-        height: 25rem;
+        height: 100%;
+        margin-top: -7rem;
+
     }
     .intro-img{
         display: block;
-        height: 22rem;
-        width: 35rem;
+        max-height: 22rem;
+        max-width: 35rem;
         align-content: center;
         overflow: hidden;
         transform:scale(1.9);
+    }
+    .grid-main{
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width:1000px){
+    #intro{
+        display: block;
+    }
+    .intro-img{
+        max-height: 15rem;
+        max-width: 50rem;
+        margin-top: 11rem;
+
+    }
+
+    #intro .grid-mobile .grid-main{
+        display: none;
+    }
+
+    .main-grid{
+        padding: 4rem 2rem;
+        display: grid;
+        grid-template-rows: 1.5fr 2.5fr;
+        height: 50rem;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .romildo{
+        margin-top: 0rem;
     }
 }
 
 @media (max-width:770px){
     #intro {
-        padding-top: 15rem;
-        height:80rem;
+        padding-bottom: 5rem;
+        height:95rem;
     }
     .grid-responsive{
-        display: block;
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
     }
     .grid-mobile{
         display: grid;
         grid-template-rows: 0.5fr 4.5fr;
         height: 80rem;
-        padding-top: 8.1rem;
+        padding-top: 15rem;
+
     }
     .img-intro{
         display: flex;
         justify-content: center;
-        height: 25rem;
-        padding-top: 3rem;
+        height: auto;
     }
     .intro-img{
-        display: block;
-        height: 12rem;
-        width: 20rem;
-        align-content: center;
-        overflow: hidden;
-        transform:scale(1.9);
+        margin-top: 2rem;
     }
-    #intro .romildo {
-        margin-top: -4rem;
+    .romildo{
+        margin-top: 2rem;
     }
 }
 @media (max-width:480px){
@@ -161,7 +226,10 @@ display: none;}
     background-color: var(--cor3);
     background-image: none;
     display: block; 
+    height:90rem;
     width: 100%;
+    overflow: hidden;
+    padding-top: 8.1rem;
 }
 .grid-mobile{
     display: grid;
@@ -171,6 +239,10 @@ display: none;}
 }
 .grid-responsive{
     display: block;
+}
+.main-grid{
+    padding: 0;
+    padding-top: 3rem;
 }
 .img-intro{
     display: flex;
@@ -185,12 +257,6 @@ display: none;}
     align-content: center;
     overflow: hidden;
     transform:scale(1.9);
-}
-#intro {
-    height:95rem;
-    width: 100%;
-    overflow: hidden;
-    padding-top: 8.1rem;
 }
 #intro .romildo {
     display: flex;
@@ -213,13 +279,19 @@ display: none;}
     }
 }
 }
-@media (max-width:345px){
+
+@media (max-width:400px){
+    #intro{
+        height: 95rem;
+    }
+}
+@media (max-width:355px){
     #intro {
-        height:105rem;
+        height:115rem;
     }
 }
 @media (max-width:290px){
     #intro {
-        height:115rem;}
+        height:125rem;}
 }
 

@@ -10,9 +10,17 @@ const temas = [
     document.getElementById("tema9"),
     document.getElementById("tema10")
 ];
+
+const videos = [
+    document.getElementById("video0"),
+    document.getElementById("video1"),
+    document.getElementById("video2")
+];
+
 const nav = document.getElementById('navmobile')
 
 const h1 = document.getElementById('principais-propostas')
+
 
 const todas = [
     document.getElementById("intro"),
@@ -53,6 +61,27 @@ function mostrartema(index) {
         tema.style.display = "block"; 
     }
 }
+
+function ocultarVideos(){
+    videos.forEach((video) => {
+        if (video) {
+            video.style.display = "none";
+        }
+    })
+}
+
+function mostrarvideos(index){
+    let video = videos[index];
+    
+    if (video.style.display === "block"){
+        video.style.display = "none"
+    }
+        else{
+            ocultarVideos();
+            video.style.display = "block";
+        } 
+    };
+
 
 function mostrarmenu(){
     if (nav.style.display == "block"){
@@ -109,3 +138,11 @@ function setaabre(){
 function setafecha(){
     seta.style.transform = "rotatex(0deg)"
 }
+
+
+//
+
+
+    
+
+    
