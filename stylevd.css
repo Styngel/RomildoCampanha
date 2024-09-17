@@ -61,7 +61,7 @@ h1{
     justify-content: center;
     padding: 0rem 2rem;
 }
-#video0, #video1, #video2{
+.vids{
     display: none;
 }
 
@@ -73,7 +73,7 @@ h1{
 }
 
 #page {
-    min-height: 67.2rem;
+    min-height: 130rem;
     padding: 2rem 0;
     background-color: var(--cor3);
 }
@@ -92,9 +92,8 @@ h1{
 .main-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /*repeat(auto-fit, minmax(200px, 800px));*/
-    gap: 3rem; 
-    min-height: 34rem;
-    /*min-height: 68rem;*/
+    gap: 2rem; 
+    min-height: 102rem;
     width: 100%;
 
 }
@@ -111,9 +110,19 @@ h1{
     justify-content: center;
     color: var(--corbranca);
     cursor: pointer;
-    max-height: 30rem;
+    height: 30rem;
     max-width: 38rem;
     text-transform: uppercase;
+
+    && a:link{
+        text-decoration: none;
+        color: var(--corbranca);
+    }
+    
+    && a:visited{
+        text-decoration: none;
+        color: var(--corbranca);
+    }
 }
 .itens h1{
     background-image: linear-gradient(90deg, #000, #000);
@@ -122,29 +131,6 @@ h1{
     -webkit-text-stroke-width: calc(4rem/16);
     -webkit-background-clip: text;
     color: var(--corbranca);
-}
-.hs{
-    background-image: linear-gradient(90deg, #000, #000);
-    background-clip: text;
-    -webkit-text-stroke-color: transparent;
-    -webkit-text-stroke-width: calc(1rem/16);
-    -webkit-background-clip: text;
-}
-.item2{
-    background-image: url(/img/raizes1.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat:no-repeat;
-    opacity: 0.6;
-    border-radius: 20%;
-}
-.item1 {
-    background-image: url(/img/sonho1.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat:no-repeat;
-    opacity: 0.6;
-    border-radius: 20%;
 }
 
 .item0{
@@ -155,19 +141,89 @@ h1{
     opacity: 0.6;
     border-radius: 20%;
 }
+.item1 {
+    background-image: url(/img/sonho2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item2{
+    background-image: url(/img/raizes1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item3{
+    background-image: url(/img/carna1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item4{
+    background-image: url(/img/cop2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item5{
+    background-image: url(/img/lab1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item6{
+    background-image: url(/img/pedra2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item7{
+    background-image: url(/img/lotes2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item8{
+    background-image: url(/img/descaso2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
 
-.hs{
+.itens a{
+    height: 100%;
+}
+.itens .hs{
     height: 100%;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
-
+    background-image: linear-gradient(90deg, #000, #000);
+    background-clip: text;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-stroke-width: calc(1rem/16);
+    -webkit-background-clip: text;
     && h1{
-        padding-top: 3.5rem;
         padding-bottom: 0rem;
     }
-    && h2{
-        padding-bottom: 3rem;
+    && h3{
+        height: 1rem;
     }
 }
 

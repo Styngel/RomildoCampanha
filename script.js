@@ -14,7 +14,13 @@ const temas = [
 const videos = [
     document.getElementById("video0"),
     document.getElementById("video1"),
-    document.getElementById("video2")
+    document.getElementById("video2"),
+    document.getElementById("video3"),
+    document.getElementById("video4"),
+    document.getElementById("video5"),
+    document.getElementById("video6"),
+    document.getElementById("video7"),
+    document.getElementById("video8")
 ];
 
 const nav = document.getElementById('navmobile')
