@@ -20,7 +20,12 @@ const videos = [
     document.getElementById("video5"),
     document.getElementById("video6"),
     document.getElementById("video7"),
-    document.getElementById("video8")
+    document.getElementById("video8"),
+    document.getElementById("video9"),
+    document.getElementById("video10"),
+    document.getElementById("video11"),
+    document.getElementById("video12")
+
 ];
 
 const nav = document.getElementById('navmobile')
