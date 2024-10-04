@@ -24,8 +24,24 @@ const videos = [
     document.getElementById("video9"),
     document.getElementById("video10"),
     document.getElementById("video11"),
-    document.getElementById("video12")
-
+    document.getElementById("video12"),
+    document.getElementById("video13"),
+    document.getElementById("video14"),
+    document.getElementById("video15"),
+    document.getElementById("video16"),
+    document.getElementById("video17"),
+    document.getElementById("video18"),
+    document.getElementById("video19"),
+    document.getElementById("video20"),
+    document.getElementById("video21"),
+    document.getElementById("video22"),
+    document.getElementById("video23"),
+    document.getElementById("video24"),
+    document.getElementById("video25"),
+    document.getElementById("video26"),
+    document.getElementById("video27"),
+    document.getElementById("video28"),
+    document.getElementById("video29")
 ];
 
 const nav = document.getElementById('navmobile')

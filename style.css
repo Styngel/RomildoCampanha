@@ -116,7 +116,6 @@ display: none;}
     
 }
 
-
 .romildo{
     display: block;
 }
@@ -125,6 +124,36 @@ display: none;}
     display: none;
 }
 
+#page {
+    height: auto;
+    background-color: #45b7ee;
+   
+}
+#page h1{
+    color: var(--corbranca);
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+.mainvid{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+
+    
+}
+#page img{
+    height: 50rem;
+    align-items: center;
+    padding: 2rem;
+
+}
 /*----------------------------------------------------------------*/
 
 
@@ -226,8 +255,7 @@ display: none;}
     background-color: var(--cor3);
     background-image: none;
     display: block; 
-    height:90rem;
-    width: 100%;
+    height:auto;
     overflow: hidden;
     padding-top: 8.1rem;
 }
@@ -265,7 +293,7 @@ display: none;}
     font-family: 'Libre Baskerville';   
     color: var(--corbranca);
     margin: 0;
-    height: 100%;
+    height: auto;
 
     && h1{
         font-size: 2.5rem;
@@ -279,10 +307,15 @@ display: none;}
     }
 }
 }
+#page img{
+    height: 40rem;
+}
+
 
 @media (max-width:400px){
     #intro{
-        height: 95rem;
+        height: auto;
+
     }
 }
 @media (max-width:355px){

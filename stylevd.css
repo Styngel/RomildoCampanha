@@ -166,7 +166,7 @@ h1{
     border-radius: 20%;
 }
 .item4{
-    background-image: url(/img/cop2.png);
+    background-image: url(/img/cop1.png);
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
@@ -237,6 +237,143 @@ h1{
     opacity: 0.6;
     border-radius: 20%;
 }
+.item13{
+    background-image: url(/img/tenis1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item14{
+    background-image: url(/img/feira1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item15{
+    background-image: url(/img/apae1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item16{
+    background-image: url(/img/creche1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item17{
+    background-image: url(/img/reurb1.jpg); 
+    background-size: cover;
+    background-position: center; 
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item18{
+    background-image: url(/img/pracas1.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item19{
+    background-image: url(/img/duplica1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item20{
+    background-image: url(/img/cartaopostal1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item21{
+    background-image: url(/img/pracajuv1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item22{
+    background-image: url(/img/segpub1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item23{
+    background-image: url(/img/ubs1.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item24{
+    background-image: url(/img/praia1.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item25{
+    background-image: url(/img/artur1.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item26{
+    background-image: url(/img/jardin1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item27{
+    background-image: url(/img/ponte3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item28{
+    background-image: url(/img/hist1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+.item29{
+    background-image: url(/img/hist1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    opacity: 0.6;
+    border-radius: 20%;
+}
+
 .itens a{
     height: 100%;
 }
